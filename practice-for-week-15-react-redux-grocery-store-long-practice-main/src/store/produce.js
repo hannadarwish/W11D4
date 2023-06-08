@@ -2,8 +2,6 @@ import produceData from '../mockData/produce.json';
 
 export default function produceReducer(state = {}, action) {
   const nextState = {...state};
-
-  debugger
   switch (action.type) {
     case POPULATE:
       action.produce.forEach(produce => {
